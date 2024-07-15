@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct Event: Comparable, Identifiable {
+struct Event: Comparable, Identifiable, Hashable {
     static func < (lhs: Event, rhs: Event) -> Bool {
         lhs.date < rhs.date
     }
